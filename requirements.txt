@@ -1,0 +1,6 @@
+# Root-level requirements.txt for Vercel serverless deployment
+# (Vercel's @vercel/python looks for requirements.txt at the repo root)
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=1.10.0
+python-multipart>=0.0.6

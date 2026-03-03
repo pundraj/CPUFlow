@@ -1,0 +1,8 @@
+# CPU Scheduling Algorithm Visualizer – Backend Dependencies
+# ==========================================================
+# Install: pip install -r requirements.txt
+
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=1.10.0
+python-multipart>=0.0.6
