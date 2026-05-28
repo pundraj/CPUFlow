@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: cpuflow-frontend
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: cpuflow-frontend
+
+  template:
+    metadata:
+      labels:
+        app: cpuflow-frontend
+
+    spec:
+      containers:
+      - name: frontend
+        image: rajz23/cpuflow-frontend:v1
+
+        ports:
+        - containerPort: 80
